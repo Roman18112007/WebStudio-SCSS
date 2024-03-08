@@ -1,0 +1,55 @@
+.rules {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.rules-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.rules-item::before {
+    content: "";
+    display: block;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    background-color: var(--bg-light-gray);
+    margin-bottom: 30px;
+}
+
+.rules-item::before {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.rules-item:nth-child(1)::before {
+    background-image: url("../images/rules/rules_img.1.svg");
+}
+
+.rules-item:nth-child(2)::before {
+    background-image: url("../images/rules/rules_img.2.svg");
+}
+
+.rules-item:nth-child(3)::before {
+    background-image: url("../images/rules/rules_img.3.svg");
+}
+
+.rules-item:nth-child(4)::before {
+    background-image: url("../images/rules/rules_img.4.svg");
+}
+
+.rules-item-title {
+    color: var(--main-color);
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    margin-bottom: 10px;
+}
+
+.rules-item-text {
+    color: var(--add-gray);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+}

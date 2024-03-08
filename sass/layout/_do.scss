@@ -1,0 +1,36 @@
+.do {
+    padding-bottom: 94px;
+}
+
+.do-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.do-title {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+.do-item {
+    position: relative;
+}
+
+.do-subtitle {
+    color: var(--add-white);
+    background-color: rgba(47, 48, 58, 0.80);
+    text-align: center;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    width: 370px;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 27px;
+    padding-top: 27px;
+}

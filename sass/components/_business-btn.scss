@@ -1,0 +1,69 @@
+.business-btn {
+    font-family: Roboto;
+    color: var(--add-white);
+    font-size: 16px;
+    background-color: var(--accent-color);
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 32px;
+    min-width: 73px;
+    border-radius: 4px;
+    border: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.business-btn:hover,
+.business-btn:focus {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.footer-form-btn {
+    color: var(--add-white);
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    border-radius: 4px;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    width: 200px;
+    height: 50px;
+    padding-right: 28px;
+    position: relative;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-btn:focus,
+.footer-form-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.order-btn-send {
+    color: var(--add-white);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    border-radius: 4px;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    padding: 10px 52px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.order-btn-send:hover,
+.order-btn-send:focus {
+    opacity: 0.8;
+    cursor: pointer;
+}
