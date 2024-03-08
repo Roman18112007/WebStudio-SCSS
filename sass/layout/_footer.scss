@@ -41,6 +41,11 @@
     opacity: 0.6;
 }
 
+.logo-footer {
+    margin-bottom: 20px;
+    color: var(--add-white);
+}
+
 .join-title {
     color: var(--add-white);
     font-size: 14px;
@@ -124,5 +129,5 @@
 .icon-subscribe {
     fill: var(--add-white);
     position: absolute;
-    right: 120px;
+    right: 30px;
 }
