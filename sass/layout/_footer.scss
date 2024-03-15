@@ -1,11 +1,11 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: var(--background-colour);
+    background-color: $background-colour;
 }
 
 .footer-item-text {
-    color: var(--add-white);
+    color: $add-white;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -19,7 +19,7 @@
 }
 
 .footer-map {
-    color: var(--add-white);
+    color: $add-white;
     font-size: 14px;
     font-style: normal;
     line-height: 1.71;
@@ -43,11 +43,11 @@
 
 .logo-footer {
     margin-bottom: 20px;
-    color: var(--add-white);
+    color: $add-white;
 }
 
 .join-title {
-    color: var(--add-white);
+    color: $add-white;
     font-size: 14px;
     line-height: normal;
     letter-spacing: 0.42px;
@@ -74,12 +74,12 @@
 }
 
 .icon-social-footer {
-    fill: var(--add-white);
+    fill: $add-white;
 }
 
 .footer-link:hover,
 .footer-link:focus {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 }
 
 .footer-container {
@@ -99,7 +99,7 @@
 }
 
 .footer-form-text {
-    color: var(--add-white);
+    color: $add-white;
     font-size: 14px;
     font-weight: 700;
     line-height: normal;
@@ -123,11 +123,11 @@
 
 .footer-form-input:hover,
 .footer-form-input:focus {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
     outline: none;
 }
 .icon-subscribe {
-    fill: var(--add-white);
+    fill: $add-white;
     position: absolute;
     right: 30px;
 }

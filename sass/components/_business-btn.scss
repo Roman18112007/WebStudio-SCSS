@@ -1,8 +1,8 @@
 .business-btn {
     font-family: Roboto;
-    color: var(--add-white);
+    color: $add-white;
     font-size: 16px;
-    background-color: var(--accent-color);
+    background-color:$accent-color;
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.96px;
@@ -21,14 +21,14 @@
     cursor: pointer;
 }
 .footer-form-btn {
-    color: var(--add-white);
+    color: $add-white;
     display: flex;
     align-items: center;
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.96px;
     border-radius: 4px;
-    background: var(--accent-color);
+    background:$accent-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     padding-top: 10px;
@@ -46,14 +46,14 @@
     opacity: 0.8;
 }
 .order-btn-send {
-    color: var(--add-white);
+    color: $add-white;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.96px;
     border-radius: 4px;
-    background: var(--accent-color);
+    background: $accent-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     padding: 10px 52px;

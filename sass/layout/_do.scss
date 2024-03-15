@@ -9,7 +9,7 @@
 }
 
 .do-title {
-    color: var(--main-color);
+    color:$main-color;
     text-align: center;
     font-size: 36px;
     letter-spacing: 1.08px;
@@ -21,7 +21,7 @@
 }
 
 .do-subtitle {
-    color: var(--add-white);
+    color: $add-white;
     background-color: rgba(47, 48, 58, 0.80);
     text-align: center;
     font-size: 14px;

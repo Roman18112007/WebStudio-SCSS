@@ -4,7 +4,7 @@
 }
 
 .client-title {
-    color: var(--main-color);
+    color: $main-color;
     text-align: center;
     font-size: 36px;
     line-height: normal;
@@ -31,7 +31,7 @@
 
 .client-link:hover,
 .client-link:focus {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
 }
 
 .icon-client {
@@ -41,5 +41,5 @@
 
 .client-link:hover .icon-client,
 .client-link:focus .icon-client {
-    fill: var(--accent-color);
+    fill: $accent-color;
 }

@@ -22,10 +22,10 @@
 
 .social-link:hover,
 .social-link:focus {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 }
 
 .social-link:hover .icon-social,
 .social-link:focus .icon-social {
-    fill: var(--add-white);
+    fill: $add-white;
 }
