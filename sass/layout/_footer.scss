@@ -1,133 +1,123 @@
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: $background-colour;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-colour;
 }
 
-.footer-item-text {
-    color: $add-white;
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.78px;
+.footer__content-address {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 
-.footer-content-address {
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
+.footer__map {
+  color: $add-white;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+  text-decoration: none;
 }
 
-.footer-map {
-    color: $add-white;
-    font-size: 14px;
-    font-style: normal;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-    text-decoration: none;
-}
-
-.footer-date {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 14px;
-    font-style: normal;
-    letter-spacing: 0.42px;
-    text-decoration: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-date:hover,
-.footer-date:focus {
+.footer__date {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: 0.42px;
+  text-decoration: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
     opacity: 0.6;
+  }
 }
 
-.logo-footer {
-    margin-bottom: 20px;
-    color: $add-white;
+.logo__footer {
+  margin-bottom: 20px;
+  color: $add-white;
 }
 
-.join-title {
-    color: $add-white;
-    font-size: 14px;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+.join__title {
+  color: $add-white;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
-.footer-list {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
+.footer-soc__list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer-link {
-    background-color: #FFFFFF1A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-social-footer {
-    fill: $add-white;
-}
-
-.footer-link:hover,
-.footer-link:focus {
+.footer-soc__link {
+  background-color: #ffffff1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
     background-color: $accent-color;
+  }
 }
 
-.footer-container {
-    display: flex;
-    gap: 76px;
+.footer-soc__icon {
+  fill: $add-white;
 }
 
-.footer-form {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+.footer__container {
+  display: flex;
+  gap: 76px;
 }
 
-.footer-form-subscribe {
-    margin-left: 93px;
-    padding-top: 10px;
+.footer__form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.footer-form-text {
-    color: $add-white;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+.footer__form-subscribe {
+  margin-left: 93px;
+  padding-top: 10px;
 }
 
-.footer-form-input {
-    color: rgba(255, 255, 255, 0.60);
-    line-height: 20px;
-    letter-spacing: 0.48px;
-    background: transparent;
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.30);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 15px;
-    width: 358px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.footer__form-text {
+  color: $add-white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
-.footer-form-input:hover,
-.footer-form-input:focus {
+.footer__form-input {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 20px;
+  letter-spacing: 0.48px;
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  width: 358px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
     border-color: $accent-color;
     outline: none;
+  }
 }
-.icon-subscribe {
-    fill: $add-white;
-    position: absolute;
-    right: 30px;
+
+.btn__icon {
+  fill: $add-white;
+  position: absolute;
+  right: 30px;
 }

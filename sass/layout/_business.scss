@@ -1,18 +1,22 @@
 .business {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url('../images/bussines/business_bg1.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/bussines/business_bg1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.business-title {
-    color: $add-white;
-    text-align: center;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    white-space: nowrap;
+.business__title {
+  color: $add-white;
+  text-align: center;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  white-space: nowrap;
 }
