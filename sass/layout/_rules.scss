@@ -17,12 +17,11 @@
   height: 120px;
   background-color: $bg-light-gray;
   margin-bottom: 30px;
-}
-
-.rules__item::before {
-  background-repeat: no-repeat;
+ background-repeat: no-repeat;
   background-position: center;
 }
+
+
 
 .rules__item:nth-child(1)::before {
   background-image: url("../images/rules/rules_img.1.svg");
