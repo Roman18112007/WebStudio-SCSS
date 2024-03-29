@@ -3,16 +3,11 @@
 }
 
 .do__list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+@include flex(30px);
 }
 
 .do__title {
-  color: $main-color;
-  text-align: center;
-  font-size: 36px;
-  letter-spacing: 1.08px;
+@extend %title;
   margin-bottom: 50px;
 }
 

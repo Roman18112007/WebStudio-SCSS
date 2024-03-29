@@ -4,9 +4,7 @@
 }
 
 .filters {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
+@include flex(8px);
 }
 
 .filters__btn {
@@ -36,14 +34,13 @@
 
 .projects__list {
   margin-top: 50px;
-  display: flex;
-  justify-content: center;
+@include flex(30px);
   flex-wrap: wrap;
-  gap: 30px;
 }
 
 .projects__item {
-  flex-basis: calc((100% - 60px) / 3);
+  @include flex-basis(60px, 3)
+
 }
 
 .projects__item:hover .project__overlay {

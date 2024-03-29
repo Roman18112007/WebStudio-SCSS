@@ -42,16 +42,13 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   padding: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(0);
   background: none;
   position: absolute;
   right: 8px;
   top: 8px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:focus,
+ &:focus,
   &:hover {
     fill: $accent-color;
     cursor: pointer;
@@ -136,11 +133,9 @@
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.42px;
-  display: flex;
-  align-items: center;
+  @include flex(7px);
   margin-top: 20px;
-  justify-content: center;
-  gap: 7px;
+
 }
 
 .order__input-agree {

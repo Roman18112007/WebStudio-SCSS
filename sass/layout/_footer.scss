@@ -26,6 +26,7 @@
   letter-spacing: 0.42px;
   text-decoration: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -38,30 +39,25 @@
 }
 
 .join__title {
-  color: $add-white;
-  font-size: 14px;
-  line-height: normal;
-  letter-spacing: 0.42px;
+  @extend %footer-title;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  line-height: normal;
 }
 
 .footer-soc {
-  display: flex;
-  gap: 10px;
+  @include flex(10px);
   align-items: center;
-  justify-content: center;
 }
 
 .footer-soc__link {
   background-color: #ffffff1a;
-  display: flex;
-  justify-content: center;
+  @include flex(0);
   align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     background-color: $accent-color;
@@ -78,9 +74,7 @@
 }
 
 .footer__form {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+@include flex(12px);
 }
 
 .footer__form-subscribe {
@@ -89,13 +83,11 @@
 }
 
 .footer__form-text {
-  color: $add-white;
-  font-size: 14px;
+  @extend %footer-title;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.42px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+
 }
 
 .footer__form-input {
@@ -109,6 +101,7 @@
   padding: 15px;
   width: 358px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     border-color: $accent-color;

@@ -4,9 +4,7 @@
 }
 
 .rules__list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+@include flex(30px);
 }
 
 .rules__item::before {

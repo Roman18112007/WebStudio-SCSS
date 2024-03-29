@@ -1,0 +1,8 @@
+@mixin flex-basis($gap, $project-items){
+flex-basis: calc((100% - $gap * (#{$project-items} - 1)) / #{$project-items});
+}
+@mixin flex($gap){
+    display:flex;
+    justify-content: center;
+    gap:$gap;
+}
