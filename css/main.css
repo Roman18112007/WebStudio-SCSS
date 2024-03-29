@@ -279,19 +279,19 @@ img {
 }
 
 .rules__item:nth-child(1)::before {
-  background-image: url("../images/rules/rules_img.1.svg");
+  background-image: url(../images/rules/rules_img.1.svg);
 }
 
 .rules__item:nth-child(2)::before {
-  background-image: url("../images/rules/rules_img.2.svg");
+  background-image: url(../images/rules/rules_img.2.svg);
 }
 
 .rules__item:nth-child(3)::before {
-  background-image: url("../images/rules/rules_img.3.svg");
+  background-image: url(../images/rules/rules_img.3.svg);
 }
 
 .rules__item:nth-child(4)::before {
-  background-image: url("../images/rules/rules_img.4.svg");
+  background-image: url(../images/rules/rules_img.4.svg);
 }
 
 .rules__title {

@@ -4,7 +4,7 @@
 }
 
 .rules__list {
-@include flex(30px);
+  @include flex(30px);
 }
 
 .rules__item::before {
@@ -15,26 +15,14 @@
   height: 120px;
   background-color: $bg-light-gray;
   margin-bottom: 30px;
- background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
-
-
-.rules__item:nth-child(1)::before {
-  background-image: url("../images/rules/rules_img.1.svg");
-}
-
-.rules__item:nth-child(2)::before {
-  background-image: url("../images/rules/rules_img.2.svg");
-}
-
-.rules__item:nth-child(3)::before {
-  background-image: url("../images/rules/rules_img.3.svg");
-}
-
-.rules__item:nth-child(4)::before {
-  background-image: url("../images/rules/rules_img.4.svg");
+@for $i from 1 through 4 {
+  .rules__item:nth-child(#{$i})::before {
+    background-image: url(../images/rules/rules_img.#{$i}.svg);
+  }
 }
 
 .rules__title {
