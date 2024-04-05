@@ -19,8 +19,16 @@
 }
 .business__btn {
   text-align: center;
-  padding: 10px 32px;
+  padding: 10px 20px;
   min-width: 73px;
+
+  display: flex;
+    @media screen and (min-width: 1200px) {
+      padding: 10px 32px;
+    }
+        @media screen and (min-width: 768px) {
+          padding: 10px 24px;
+        }
 }
 
 .footer__btn {

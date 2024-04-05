@@ -1,13 +1,19 @@
 .do {
-  padding-bottom: 94px;
+
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    display: block;
+  }
 }
 
 .do__list {
-@include flex(30px);
+  @include flex(30px);
 }
 
 .do__title {
-@extend %title;
+  @extend %title;
   margin-bottom: 50px;
 }
 

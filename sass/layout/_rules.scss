@@ -1,22 +1,49 @@
 .rules {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .rules__list {
-  @include flex(30px);
+  display: block;
+  gap: 30px;
+
+  @media screen and (min-width: 1200px) {
+  display: flex;
+  justify-content: center;
+ }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .rules__item::before {
   content: "";
   display: block;
   border-radius: 4px;
-  width: 270px;
   height: 120px;
+  width: 270px;
+  width: 100%;
   background-color: $bg-light-gray;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media screen and (min-width: 1200px) {
+    @include flex-basis(30px, 4)
+  }
+
+  @media screen and (min-width: 768px) {
+    @include flex-basis(30px, 2)
+  }
 }
 
 @for $i from 1 through 4 {
@@ -30,6 +57,16 @@
   font-size: 14px;
   letter-spacing: 0.42px;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 .rules__text {

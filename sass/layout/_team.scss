@@ -1,25 +1,70 @@
 .team {
   background-color: $bg-light-gray;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
 }
 
 .team__list {
-@include flex(30px);
+  flex-direction: column;
+  display: flex;
+  gap: 30px;
+
+  @media screen and (min-width:1200px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width:768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
-.team__wrapper-info {
+.team__item {
   background-color: $add-white;
-  padding-bottom: 30px;
-  padding-top: 30px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 768px) {
+    @include flex-basis(30px, 2);
+  }
+
+  @media screen and (min-width:1200px) {
+    @include flex-basis(30px, 4);
+  }
+}
+
+.team__img {
+  width: 100%;
+}
+
+.team__wrapper-info {
+  padding-top: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width:1200px) {
+    padding-bottom: 30px;
+  }
 }
 
 .team__title {
-@extend %title;
-  margin-bottom: 50px;
+  @media screen and (min-width:1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+
+  }
+
+  letter-spacing: 1.08px;
+  font-size: 28px;
+  color: $main-color;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .team__subtitle {
@@ -36,8 +81,9 @@
   letter-spacing: 0.48px;
   text-align: center;
 }
+
 .social {
-@include flex(10px);
+  @include flex(10px);
   margin-top: 16px;
 }
 
@@ -47,7 +93,7 @@
   width: 44px;
   height: 44px;
   align-items: center;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
