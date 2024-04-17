@@ -16,4 +16,8 @@ color: $main-color;
 .logo__footer {
   margin-bottom: 20px;
   color: $add-white;
+  text-align: center;
+    @media screen and (min-width: 1200px) {
+     text-align: left;
+      }
 }
