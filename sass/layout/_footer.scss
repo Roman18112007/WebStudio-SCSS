@@ -26,6 +26,9 @@ gap: 60px;
   flex-direction: column;
   gap: 9px;
   text-align: center;
+    @media screen and (min-width: 1200px) {
+     text-align:left;
+      }
 }
 
 .footer__map {
@@ -55,14 +58,14 @@ gap: 60px;
   @extend %footer-title;
   text-transform: uppercase;
   line-height: normal;
- text-align: center
+ text-align: center;
 }
 
 .footer-soc {
   @include flex(10px);
   align-items: center;
     @media screen and (min-width: 1200px) {
-       text-align: left;
+       text-align: start;
       }
 }
 
@@ -92,14 +95,16 @@ gap: 60px;
 
 .footer__form {
 display: block;
+
   @media screen and (min-width: 1200px) {
     @include flex(12px);
     }
 }
 
 .footer__form-subscribe {
-  margin-left: 93px;
-  padding-top: 10px;
+    @media screen and (min-width: 1200px) {
+ padding-top: 10px;
+      }
 }
 
 .footer__form-text {
@@ -108,10 +113,14 @@ display: block;
   line-height: normal;
   text-transform: uppercase;
   text-align: center;
-
+  @media screen and (min-width: 1200px) {
+   text-align: left;
+    }
 }
 
 .footer__form-input {
+  display: block;
+  margin: 0 auto;
   color: rgba(255, 255, 255, 0.6);
   line-height: 20px;
   letter-spacing: 0.48px;
@@ -120,13 +129,16 @@ display: block;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 15px;
-  width: 358px;
+ width: 450px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     border-color: $accent-color;
     outline: none;
   }
+   @media screen and (min-width: 1200px) {
+        width: 358px;
+         }
 }
 
 .btn__icon {

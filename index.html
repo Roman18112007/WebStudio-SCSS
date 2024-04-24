@@ -15,14 +15,16 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
+
 <body class="body">
   <header class="header">
     <div class="container">
-      <p class="logo header__logo"><span class="logo__colortext">Web</span>Studio</p>
-      <a class="btn__menu" href=""><svg class="btn__menu-icon" width="40" height="40">
-        <use href="./images/icon/symbol-defs.svg#icon-menu"></use>
-      </svg></a>
-      <nav class="nav">
+      <a href="./index.html" class="logo header__logo"><span class="logo__colortext">Web</span>Studio</a>
+      <button class="menu-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu"><a class="btn__menu"
+          href=""><svg class="btn__menu-icon" width="40" height="40">
+            <use href="./images/icon/symbol-defs.svg#icon-menu"></use>
+          </svg></a></button>
+<nav class="nav">
         <ul class="list nav__list">
           <li class="nav__item"><a href="./index.html" class=" nav__link nav__link--current">Студія</a></li>
           <li class="nav__item"><a href="./portfolio.html" class="nav__link ">Портфоліо</a></li>
@@ -37,11 +39,39 @@
             </svg>info@devstudio.com</a>
         </li>
         <li class="contact-list__item">
-
           <a class="contact-list__link" href="tel+380961111111"><svg class="contact-list__icon" width="10" height="16">
               <use href="./images/icon/symbol-defs.svg#icon-smartphone"></use>
             </svg>+38 096 111 11 11</a>
         </li>
+      </ul>
+    </div>
+    </nav>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+          <path fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <ul class="list mobile-menu__list">
+        <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link">Студія</a></li>
+        <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a></li>
+        <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link">Контакти</a></li>
+      </ul>
+      <ul class="list mobile-contact__list">
+        <li class="mobile-contact__item">
+          <a class="mobile-contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="mobile-contact__item">
+          <a class="mobile-contact__link" href="tel+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
+      <ul class="mobile-soc__list">
+        <li class="mobile-soc__item"><a class="mobile-soc__link" href="">Instagram</a></li>
+        <li class="mobile-soc__item"><a class="mobile-soc__link" href="">Twitter</a></li>
+        <li class="mobile-soc__item"><a class="mobile-soc__link" href="">Facebook</a></li>
+        <li class="mobile-soc__item"><a class="mobile-soc__link" href="">LinkedIn</a></li>
       </ul>
     </div>
   </header>
@@ -106,7 +136,7 @@
       <div class="container">
         <h2 class="team__title">Наша команда</h2>
         <ul class=" list team__list">
-          <li  class="team__item"><img src="./images/team/team_img2.jpg" alt="Ігор Дем'яненко" class="team__img">
+          <li class="team__item"><img src="./images/team/team_img2.jpg" alt="Ігор Дем'яненко" class="team__img">
             <div class="team__wrapper-info">
               <h3 class="team__subtitle">Ігор Дем'яненко</h3>
               <p class="team__text">Product Designer</p>
@@ -223,6 +253,7 @@
       </div>
     </section>
     <section class="client">
+      <div class="container">
       <h2 class="client__title">Постійні клієнти</h2>
       <ul class="list client__list">
         <li class="client__item"><a class="client__link" href=""><svg class="client__icon" width="106" height="60">
@@ -244,13 +275,14 @@
               <use href="./images/icon/symbol-defs.svg#icon-logo_client6"></use>
             </svg></a></li>
       </ul>
+    </div>
     </section>
   </main>
   <footer class="footer">
     <div class="container">
       <div class="footer__container">
         <div class="footer__date-container">
-          <p class="logo logo__footer"><span class="logo__colortext">Web</span>Studio</p>
+          <a href="./index.html" class="logo logo__footer"><span class="logo__colortext">Web</span>Studio</a>
           <address class="footer__content-address">
             <a class="footer__map" href="https://goo.gl/maps/a296i8g7qxYp3x9m8" target="_blank">м. Київ, пр-т Лесі
               Українки,
@@ -326,12 +358,14 @@
             placeholder="Введіть текст"></textarea></label>
         <label class="order__label-agree"><input class="order__input-agree visually-hidden" type="checkbox">
           <div class="order__custom-input-agree"></div>Погоджуюся з розсилкою та
-          приймаю <a class="order__link" href="">Умови договору</a></label>
+          приймаю <a class="order__link" href="">Умови договору</a>
+        </label>
         <button class="order__btn btn" type="button">Відправити</button>
       </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
