@@ -176,7 +176,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__btn {
-    margin: 0 top;
+    margin-top: 0;
   }
 }
 
@@ -191,6 +191,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -204,6 +207,15 @@ img {
   .header {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+}
+
+.nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: block;
   }
 }
 
@@ -821,6 +833,11 @@ img {
   line-height: normal;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .join__title {
+    text-align: left;
+  }
+}
 
 .footer-soc {
   display: -webkit-box;
@@ -918,13 +935,18 @@ img {
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 15px;
-  width: 450px;
+  width: 290px;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__form-input:hover, .footer__form-input:focus {
   border-color: #2196f3;
   outline: none;
+}
+@media screen and (min-width: 480px) {
+  .footer__form-input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__form-input {
