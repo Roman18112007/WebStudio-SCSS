@@ -1240,7 +1240,10 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 48px;
+  padding-top: 48px;
   background-color: #ffffff;
   z-index: 999;
   -webkit-transform: translateX(100%);
@@ -1340,11 +1343,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 10px;
-  padding-top: 64px;
+  margin-top: 64px;
 }
 
 .mobile-soc__item:not(:last-child) {
